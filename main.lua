@@ -8,6 +8,9 @@ function love.load()
 	road = load_image("road")
 	road_y = 0
 	speed = 0.1
+
+	bush = load_image("bush")
+	grass = load_image("grass")
 end
 
 function  load_image(name)
@@ -35,7 +38,11 @@ end
 
 function love.draw()
 	for i=0,13 do
+		love.graphics.draw(grass, 32, (road_y + 128 * i) / 1)
+		love.graphics.draw(grass, (width / 2.0) + 128, (road_y + 128 * i) / 1)
 		love.graphics.draw(road, (width / 2.0) - 128, (road_y + 128 * i) / 1)
+		love.graphics.draw(bush, 128 + 64, (road_y + 128 * i) / 1)
+		love.graphics.draw(bush, 128 + 256 + 128 + 32, (road_y + 128 * i) / 1)
 	end
 
 	love.graphics.print("Road: " .. road_y, 16, 16)

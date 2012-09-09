@@ -8,6 +8,8 @@
 * timer
 
 ## Working on
-* Road
 
 ## Done
+* Road
+* Bushes
+* Grass
