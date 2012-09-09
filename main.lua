@@ -1,3 +1,7 @@
+require "lib/vec2"
+require "lib/sprite"
+--require "lib/road"
+
 function love.load()
 	width = 800
 	height = 600
