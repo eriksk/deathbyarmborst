@@ -2,14 +2,16 @@
 
 ## Backlog
 * Sidewalk
-* Cars
 * hud
 * score
 * timer
 
 ## Working on
+* Cars
 
 ## Done
 * Road
 * Bushes
 * Grass
+* Friction
+* Car/Boundaries
