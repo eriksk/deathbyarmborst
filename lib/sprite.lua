@@ -14,7 +14,6 @@ function Sprite.new(filename, x, y)
 	s.origin = Vec2.new(s.width / 2.0, s.height / 2.0)
 	s.scale = 1.0
 	s.rotation = 0.0
-	s.color = Color.white()
 
 	return s
 end
@@ -36,7 +35,6 @@ function Sprite:update(dt)
 end
 
 function Sprite:draw()
-	set_color(self.color)
 	love.graphics.draw(
 		self.texture,
 		self.position.x,
